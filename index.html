@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- IMPORTANT: Mobile Stability -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>OSP - Odisha Service Point</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <!-- SEO -->
+    <meta name="description"
+        content="OSP - Odisha Service Point provides all digital services like document apply, govt certificates, scholarship, form fill-up & CSC services online 24x7.">
+    <meta name="keywords"
+        content="OSP Odisha, Odisha Service Point, CSC Services, Online Cyber Cafe, Govt Services Odisha, OSP">
+    <meta name="author" content="OSP Odisha">
+
+    <!-- PWA / App-like -->
+    <meta name="theme-color" content="#0d47a1">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- iOS App Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://wa.me">
+    <link rel="preconnect" href="https://t.me">
+    <!-- ===========================
+     PRECONNECTS & FONTS
+=========================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts (Roboto + Open Sans example) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Oriya:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;600&family=Bebas+Neue&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Roboto+Condensed:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Oriya:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- ===========================
+     BOOTSTRAP CSS
+=========================== -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- ===========================
+     FONT AWESOME ICONS
+=========================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-vjF29bCkZ8p0JH+CLt2xJhnxq1i/EBKw5h+JFRP1V0b8tO0k0Gh4kX9NkbpxI0B1Z6+ZIFuP5N9KXk6YDF+bEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- ===========================
+     JQUERY (Required for Bootstrap 3 JS)
+=========================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- ===========================
+     BOOTSTRAP JS
+=========================== -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- ===========================
+     OPTIONAL: POPPER (if you use Bootstrap 4/5 features)
+=========================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
+        integrity="sha512-BxNfzCwAXwn5Yc+rP7G6nLZfXbW3dkM7VpIyG6wXAiN9VvH1yHj6X1gTRP/y5ZgGZ6HvdXnR7y6Z1+R7QSeQ+Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- ===========================
+     OPTIONAL: ANIMATION LIBRARIES
+=========================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="icon" href="./assets/osp hd logo 3.png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header/Navbar -->
+    <header role="banner">
+        <div class="logo">
+            <a href="index.html"> <!-- Link to homepage -->
+                <img src="assets/osp hd logo 3.png" alt="OSP Logo" loading="lazy">
+            </a>
+        </div>
+
+        <!-- Mobile main links -->
+        <nav class="mobile-nav" aria-label="Mobile Navigation">
+            <a href="#services">Services</a>
+            <a href="#apply">Apply</a>
+            <a href="#contact">Contact</a>
+            <a href="#faq">FAQ</a>
+            <!-- <a href="#about">About</a> -->
+            <!-- <a href="agent-login.html">Agent Login</a> -->
+
+
+        </nav>
+
+        <!-- Desktop full nav + Hamburger -->
+        <nav id="fullNav" aria-label="Main Navigation">
+            <span id="closeMenu">&times;</span>
+            <a href="#home">Home</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#how-to-apply">how-to-apply</a>
+            <a href="#about">About</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+            <a href="agent-login.html">Agent Login</a>
+            <!-- <a href="#lang">Language</a> -->
+        </nav>
+
+        <!-- Hamburger for mobile -->
+        <button id="darkModeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <span class="sun">☀️</span>
+            <span class="moon">🌙</span>
+        </button>
+
+        <div id="hamburger" aria-label="Menu" role="button">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <!-- <button id="darkModeToggle" title="Toggle Dark Mode">🌓</button> -->
+
+    </header>
+
+    <!-- Home / Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <!-- <img src="assets/bb3.jpeg" class="hero-img active" alt="OSP Digital Services" loading="lazy">
+            <img src="assets/banner3.jpg" class="hero-img" alt="Odisha Service Point" loading="lazy">
+            <img src="assets/bb4.jpeg" class="hero-img" alt="Odisha Service Point" loading="lazy"> -->
+            <img src="assets/hero1.png" class="hero-img" alt="Odisha Service Point" loading="lazy">
+            <img src="assets/hero2.png" class="hero-img" alt="Odisha Service Point" loading="lazy">
+            <img src="assets/hero3.png" class="hero-img" alt="Odisha Service Point" loading="lazy">
+            <img src="assets/bb3.jpeg" class="hero-img" alt="Odisha Service Point" loading="lazy">
+            <img src="assets/THUMB 3.jpeg" class="hero-img" alt="Odisha Service Point" loading="lazy">
+            <img src="assets/thumbnal 1.jpg.jpeg" class="hero-img" alt="Odisha Service Point" loading="lazy">
+            <img src="assets/THUMB SECURITY.png" class="hero-img" alt="Odisha Service Point" loading="lazy">
+            <!-- <img src="assets/banner.jpg" class="hero-img" alt="Odisha Service Point" loading="lazy"> -->
+        </div>
+
+        <div class="hero-content">
+            <h1>
+                Smart Digital Services <br>
+                for a <span>Viksit Bharat</span>
+            </h1>
+
+            <p class="odia-text">
+                ଓଡିଶା ପାଇଁ ସ୍ମାର୍ଟ ଡିଜିଟାଲ୍ ସେବାର ଏକ ନୂଆ ପଦକ୍ଷେପ
+            </p>
+        </div>
+    </section>
+
+    <!-- Notice / Update Ticker -->
+    <!-- Official Notice Board -->
+    <section class="notice-board">
+        <div class="notice-title">
+            📢 Announcements / ସୂଚନା
+        </div>
+
+        <div class="notice-content">
+            <div class="notice-scroll">
+                <div class="announcement">
+                    <!-- <span class="label label-danger">⚠️ IMPORTANT ANNOUNCEMENT</span>
+  <p>OSP services may be delayed due to system upgrade. Please check back later.</p>
+</div> -->
+                    <span class="badge badge-danger ml-2">New</span>
+                    <span>PM-KISAN registration is now open for eligible farmers.</span>
+                    <span class="badge badge-danger ml-2">New</span>
+                    <span>Scholarship application last date has been extended.</span>
+                    <span>Farmer subsidy services will start from next week.</span>
+                    <span>Government portal maintenance scheduled today 10 PM – 12 AM.</span>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services / ଆମ ସେବା</h2>
+
+        <div class="service-list">
+            <div class="service-card" onclick="openWhatsapp('Document Apply')" role="button">
+                <img src="assets/document-apply.jpg" alt="Document Apply" loading="lazy">
+                <p>Document Apply / ଡକ୍ୟୁମେଣ୍ଟ ଆବେଦନ</p>
+            </div>
+
+            <div class="service-card" onclick="openWhatsapp('Govt Certificates')" role="button">
+                <img src="assets/govt-certificates.jpg" alt="Govt Certificates" loading="lazy">
+                <p>Govt Certificates / ସରକାରୀ ସର୍ଟିଫିକେଟ୍</p>
+            </div>
+
+            <div class="service-card" onclick="openWhatsapp('Scholarship Apply')" role="button">
+                <img src="assets/scholarship-apply.jpg" alt="Scholarship Apply" loading="lazy">
+                <p>Scholarship Apply / ସ୍କଲାରସିପ୍ ଆବେଦନ</p>
+            </div>
+
+            <div class="service-card" onclick="openWhatsapp('Form Fill-up')" role="button">
+                <img src="assets/form-fillup.jpg" alt="Form Fill-up" loading="lazy">
+                <p>Form Fill-up / ଫର୍ମ ଭରା</p>
+            </div>
+
+            <div class="service-card" onclick="openWhatsapp('Job Assistance')" role="button">
+                <img src="assets/job-assistance.jpg" alt="Job Assistance" loading="lazy">
+                <p>Job Assistance / ଚାକିରି ସହାୟତା</p>
+            </div>
+
+            <div class="service-card" onclick="openWhatsapp('CSC Services')" role="button">
+                <img src="assets/csc-services.jpg" alt="CSC Services" loading="lazy">
+                <p>CSC Services / ସିଏସସି ସେବା</p>
+            </div>
+            <div class="service-card" onclick="openFarmerPopup()" role="button">
+                <img src="assets/farmer-support.jpg" alt="Farmer Support" loading="lazy">
+                <p>Farmer Support / କୃଷକ ସେବା</p>
+            </div>
+            <div class="service-card" onclick="openWhatsapp('Medical Services')" role="button">
+                <img src="assets/medical.jpeg" alt="Medical Services" loading="lazy">
+                <p>Medical Services / ଚିକିତ୍ସା ସେବା</p>
+            </div>
+            <div class="service-card" onclick="openWhatsapp('Subhadra Yojana')" role="button">
+                <img src="assets/subhadra.jpeg" alt="Subhadra Yojana" loading="lazy">
+                <p>Subhadra Yojana / ସୁଭଦ୍ରା ଯୋଜନା</p>
+            </div>
+
+
+
+        </div>
+    </section>
+    <!-- AI SCHEME FINDER -->
+
+    <section id="ai-scheme" class="ai-scheme">
+        <h2>🤖 AI Government Scheme Assistant / AI ସରକାରୀ ଯୋଜନା ସହାୟକ</h2>
+
+        <p class="ai-desc">
+            Hello 🙏 / ନମସ୍କାର 🙏 <br>
+            I am OSP's AI Assistant / ମୁଁ OSP ର AI ସହାୟକ । <br>
+            Please provide some basic details / ଦୟାକରି ଆପଣଙ୍କ କିଛି ସାଧାରଣ ତଥ୍ୟ ଦିଅନ୍ତୁ, <br>
+            I will analyze like a human / ମୁଁ ମଣିଷ ଭଳି ଭାବେ ବିଶ୍ଲେଷଣ କରି <br>
+            and suggest suitable government schemes for you / ଆପଣଙ୍କ ପାଇଁ ଯୋଗ୍ୟ ସରକାରୀ ଯୋଜନା କହିଦେବି ।
+        </p>
+
+        <div class="ai-form">
+            <input type="number" id="aiAge" placeholder="Age / ବୟସ">
+            <input type="number" id="aiIncome" placeholder="Annual Income (₹) / ବାର୍ଷିକ ଆୟ (₹)">
+
+            <select id="aiCaste">
+                <option value="">Select Caste / ଜାତି ବାଛନ୍ତୁ</option>
+                <option>SC</option>
+                <option>ST</option>
+                <option>OBC</option>
+                <option>SEBC</option>
+                <option>General</option>
+            </select>
+
+            <select id="aiOccupation">
+                <option value="">Select Occupation / ପେଶା ବାଛନ୍ତୁ</option>
+                <option>Student</option>
+                <option>Farmer</option>
+                <option>Worker</option>
+                <option>Unemployed</option>
+            </select>
+
+            <button onclick="findMySchemeAI()">
+                🤖 Find Scheme for Me / AI ମୋ ପାଇଁ ଯୋଜନା ଖୋଜ
+            </button>
+        </div>
+
+        <div id="aiResult" class="ai-result"></div>
+    </section>
+
+
+    <!-- How to Apply Section -->
+
+    <section id="how-to-apply" class="how-to-apply">
+        <div class="container">
+            <h2>How to Apply Your Documents Online? <br> / <span class="odia">ଅନଲାଇନ୍ ରେ ଆପଣଙ୍କ ଦଳିଲ କିପରି ଆବେଦନ
+                    କରିବେ?</span></h2>
+
+            <p class="subtitle">
+                OSP - Odisha Service Point: Online Cyber Cafe Services Made Easy <br>
+                <span class="odia">OSP - ଓଡିଶା ସର୍ଭିସ ପଏଣ୍ଟ: ଅନଲାଇନ୍ ସେବା ସହଜ ହୋଇଗଲା</span>
+            </p>
+
+            <div class="steps">
+
+                <!-- Step 1 -->
+                <div class="step">
+                    <div class="step-icon">
+                        <!-- <span>1</span> -->
+                        <img src="assets/s1111111.png" alt="Send Documents">
+                    </div>
+                    <h3>Send Your Documents <br> <span class="odia">ଦଳିଲ ପଠାନ୍ତୁ</span></h3>
+                    <ul>
+                        <li>Send clear photos/scans on WhatsApp.</li>
+                        <li>Include service details (certificate/form). </li>
+                        <li><span class="odia">ଦଳିଲ ଖୋଲା ଅବସ୍ଥାରେ WhatsApp ରେ ପଠାନ୍ତୁ।</span></li>
+                        <li><span class="odia">କୁହନ୍ତୁ କୋଣସି ସର୍ଟିଫିକେଟ୍/ଫର୍ମ ଆବଶ୍ୟକ।</span></li>
+                    </ul>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step">
+                    <div class="step-icon">
+                        <!-- <span>2</span> -->
+                        <img src="assets/s222.png" alt="OSP Team Contact">
+                    </div>
+                    <h3>Our Team Will Contact You <br> <span class="odia">ଆମ ଦଳ ଯୋଗାଯୋଗ କରିବେ</span></h3>
+                    <ul>
+                        <li>We verify and confirm your request.</li>
+                        <li>Contact via WhatsApp/Phone.</li>
+                        <li><span class="odia">ଦଳିଲ ଯାଞ୍ଚ କରି ସମ୍ପର୍କ କରାଯିବ।</span></li>
+                        <li><span class="odia">WhatsApp / ଫୋନ ଦ୍ୱାରା ଯୋଗାଯୋଗ।</span></li>
+                    </ul>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step">
+                    <div class="step-icon">
+                        <!-- <span>3</span> -->
+                        <img src="assets/s3.png" alt="Confirmation & Payment">
+                    </div>
+                    <h3>Confirmation & Payment <br> <span class="odia">ନିଶ୍ଚିତିକରଣ ଓ ପେମେଣ୍ଟ୍</span></h3>
+                    <ul>
+                        <li>We submit application after confirmation.</li>
+                        <li>Secure payment if required.</li>
+                        <li><span class="odia">ପେମେଣ୍ଟ୍ ପରେ ଆବେଦନ କରାଯିବ।</span></li>
+                        <li><span class="odia">ପ୍ରକ୍ରିୟା ସମ୍ପୂର୍ଣ୍ଣ ହେଲେ ସୂଚନା ମିଳିବ।</span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================
+     FEEDBACK SECTION
+========================= -->
+    <section id="feedback" class="feedback">
+        <div class="container">
+
+            <h2>
+                Citizen Feedback <br>
+                <span class="odia">ନାଗରିକ ମତାମତ</span>
+            </h2>
+
+            <p class="feedback-subtitle">
+                Affordable & 24×7 digital services for everyone <br>
+                <span class="odia">ସମସ୍ତଙ୍କ ପାଇଁ କମ୍ ଖର୍ଚ୍ଚରେ 24×7 ଡିଜିଟାଲ୍ ସେବା</span>
+            </p>
+
+            <!-- 🔶 TRUST HIGHLIGHT -->
+            <div class="feedback-highlight">
+                <span>💰 Low-Cost Services</span>
+                <span>⏰ 24×7 Support</span>
+                <span>📱 WhatsApp Based</span>
+                <span>🏡 Rural Friendly</span>
+            </div>
+
+            <!-- TEXT FEEDBACK -->
+            <div class="feedback-cards">
+
+                <div class="feedback-card">
+                    <p>
+                        “OSP provides services at very low cost.
+                        I applied my income certificate without visiting any cyber cafe.
+                        Support was available even at night.”
+                    </p>
+                    <h4>– Ramesh Naik, Odisha</h4>
+                </div>
+
+                <div class="feedback-card">
+                    <p>
+                        “Scholarship application was completed through WhatsApp.
+                        Charges were affordable and service was available 24×7.”
+                    </p>
+                    <h4>– Sunita Das</h4>
+                </div>
+
+                <div class="feedback-card">
+                    <p>
+                        “OSP is very helpful for village people.
+                        Low fees, fast response, and full guidance anytime.”
+                    </p>
+                    <h4>– Bikash Sahoo</h4>
+                </div>
+
+            </div>
+
+            <!-- VIDEO FEEDBACK -->
+            <div class="feedback-videos">
+
+                <div class="video-box">
+                    <video controls preload="metadata" poster="assets/thumbnal 1.jpg.jpeg">
+                        <source src="assets/Odisha_Service_Point_Digital_Trust_Video.mp4" type="video/mp4">
+                    </video>
+                    <p>Low-cost service feedback</p>
+                </div>
+
+                <div class="video-box">
+                    <video controls preload="metadata" poster="assets/thumbnal 2.jpeg">
+                        <source src="assets/Odia_Video_for_Trust_Building.mp4" type="video/mp4">
+                    </video>
+                    <p>24×7 WhatsApp support feedback</p>
+                </div>
+
+                <div class="video-box">
+                    <video controls preload="metadata" poster="assets/THUMB 3.jpeg">
+                        <source src="assets/SUPPOT.mp4" type="video/mp4">
+                    </video>
+                    <p>24×7 support feedback</p>
+                </div>
+
+                <div class="video-box">
+                    <video controls preload="metadata" poster="assets/THUMB SECURITY.png">
+                        <source src="assets/SECURITY.mp4" type="video/mp4">
+                    </video>
+                    <p>Secure & trusted service</p>
+                </div>
+
+                <div class="video-box">
+                    <video controls preload="metadata" poster="assets/THUMB AND BANNER FOR TRUST.jpeg">
+                        <source src="assets/PAYMENT.mp4" type="video/mp4">
+                    </video>
+                    <p>Safe & easy payment support</p>
+                </div>
+                <div class="video-box">
+                    <video controls preload="metadata" poster="assets/sdg thumb.png">
+                        <source src="assets/sdg.mp4" type="video/mp4">
+                    </video>
+                    <p>Safe & easy payment support</p>
+                </div>
+
+
+            </div>
+
+            <p class="feedback-note">
+                Feedback shared with user consent. Services are provided at minimal cost
+                and available 24×7 via digital channels.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Impact / SDG Section -->
+    <section id="impact" class="impact">
+        <p style="margin-top:20px; font-size:14px; color:#444;">
+            Aligned with <strong>UN Sustainable Development Goals (SDGs)</strong> for <strong>Viksit Bharat
+                2047</strong>
+        </p>
+
+
+
+
+        <h2>Our Impact / ଆମ ପ୍ରଭାବ</h2>
+
+        <div class="impact-cards">
+            <div class="impact-card">
+                <h3><span class="count" data-target="1200">0</span>+</h3>
+                <p>Citizens Served</p>
+                <small>SDG 1 – No Poverty</small>
+            </div>
+
+            <div class="impact-card">
+                <h3><span class="count" data-target="3500">0</span>+</h3>
+                <p>Services Delivered</p>
+                <small>SDG 9 – Digital Infrastructure</small>
+            </div>
+
+            <div class="impact-card">
+                <h3><span class="count" data-target="60">0</span>%</h3>
+                <p>Time Saved</p>
+                <small>SDG 10 – Reduced Inequality</small>
+            </div>
+
+            <div class="impact-card">
+                <h3><span class="count" data-target="25">0</span>+</h3>
+                <p>Villages Covered</p>
+                <small>SDG 8 – Decent Work</small>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Apply / Service Request Section -->
+    <section id="apply" class="apply">
+        <h2>Apply for Service / ସେବା ପାଇଁ ଆବେଦନ</h2>
+
+        <form class="apply-form" onsubmit="sendWhatsApp(event)">
+            <input type="text" id="name" placeholder="Full Name / ନାମ" required>
+            <input type="tel" id="mobile" placeholder="Mobile Number / ମୋବାଇଲ୍" required>
+            <input type="text" id="village" placeholder="Village / ଗାଁ" required>
+
+            <select id="service" required>
+                <option value="">Select Service</option>
+                <option>Document Apply</option>
+                <option>Govt Certificate</option>
+                <option>Scholarship Apply</option>
+                <option>Form Fill-up</option>
+                <option>Job Assistance</option>
+                <option>CSC Services</option>
+            </select>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+    <!-- Request Tracking Section -->
+    <section id="tracking" class="tracking">
+        <h2>Track Your Request / ଆବେଦନ ଟ୍ରାକ୍ କରନ୍ତୁ</h2>
+
+        <div class="tracking-box">
+            <input type="text" id="requestId" placeholder="Enter Request ID (e.g. OSP1234)">
+            <button onclick="trackRequest()">Track Status</button>
+
+            <p id="statusResult" class="status-result"></p>
+        </div>
+    </section>
+
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <h2>Pricing / ମୂଲ୍ୟ</h2>
+
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Price (₹)</th>
+                </tr>
+                <tr>
+                    <td>Document Apply</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Govt Certificates</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Scholarship Apply</td>
+                    <td>50-100</td>
+                </tr>
+                <tr>
+                    <td>Form Fill-up</td>
+                    <td>30-50</td>
+                </tr>
+                <tr>
+                    <td>Job Assistance</td>
+                    <td>50-100</td>
+                </tr>
+                <tr>
+                    <td>CSC Services</td>
+                    <td>50</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <div style="text-align:center; margin: 20px 0;">
+        <button class="pay-btn" onclick="openPaymentPopup()">
+            💳 Pay for Service
+        </button>
+    </div>
+
+    <!-- Payment Popup -->
+    <p style="text-align:center; font-size:13px; color:#555;">
+        Payment is collected digitally via UPI after service request confirmation.
+    </p>
+
+    <div id="paymentPopup" class="popup-overlay">
+        <div class="popup-box payment-box">
+            <span class="close-btn" onclick="closePaymentPopup()">&times;</span>
+
+            <h2>💳 Pay for Service</h2>
+            <p>Secure UPI Payment</p>
+
+            <!-- QR IMAGE -->
+            <div class="qr-box">
+                <img src="assets/qrrcode.jpeg" alt="UPI QR">
+            </div>
+
+            <div class="upi-id">
+                UPI ID: <strong>7855091725@naviaxis</strong>
+            </div>
+
+            <button class="confirm-pay" onclick="showReceipt()">
+                I Have Paid
+            </button>
+
+            <p class="note">
+                Payment after service confirmation
+            </p>
+        </div>
+    </div>
+
+    <!-- Receipt Popup -->
+    <div id="receiptPopup" class="popup-overlay">
+        <div class="popup-box receipt-box">
+            <span class="close-btn" onclick="closeReceiptPopup()">&times;</span>
+
+            <h2>✅ Payment Successful</h2>
+
+            <div class="receipt-row">
+                <span>Service</span><span>OSP Digital Service</span>
+            </div>
+            <div class="receipt-row">
+                <span>Amount</span><span>₹50</span>
+            </div>
+            <div class="receipt-row">
+                <span>Payment Mode</span><span>UPI</span>
+            </div>
+            <div class="receipt-row">
+                <span>Status</span><span>Completed</span>
+            </div>
+
+            <p class="thank-you">
+                Thank you for using <strong>Odisha Service Point</strong>
+            </p>
+        </div>
+    </div>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About OSP / ଓଡିଶା ସର୍ଭିସ ପଏଣ୍ଟ ବିଷୟରେ</h2>
+
+        <p class="about-text">
+            <strong>Odisha Service Point (OSP)</strong> is a citizen-centric digital service platform
+            designed to help people easily access government and essential online services.
+            <br><br>
+            <strong>Odisha Service Point (OSP)</strong> ହେଉଛି ଏକ ନାଗରିକ-କେନ୍ଦ୍ରିକ ଡିଜିଟାଲ୍ ସେବା ପ୍ଲାଟଫର୍ମ,
+            ଯାହା ଲୋକମାନଙ୍କୁ ସରକାରୀ ଓ ଆବଶ୍ୟକୀୟ ଅନଲାଇନ୍ ସେବା ସହଜରେ ପ୍ରାପ୍ତ କରିବାରେ ସାହାଯ୍ୟ କରେ।
+        </p>
+
+
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions / ପ୍ରଶ୍ନୋତ୍ତର</h2>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                OSP କି ସରକାରୀ ୱେବସାଇଟ୍ ?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    No. OSP is not a government website.
+                    OSP ହେଉଛି ଏକ digital service assistance platform, ଯାହା ଲୋକମାନଙ୍କୁ ସରକାରୀ ସେବା ପାଇଁ ସହଯୋଗ କରେ।
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                ଡକ୍ୟୁମେଣ୍ଟ କେମିତି ଦେବି ?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    Documents WhatsApp ମାଧ୍ୟମରେ submit କରିପାରିବେ
+                    service confirmation ପରେ।
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Payment କେବେ କରିବାକୁ ପଡ଼ିବ ?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    Payment ସେବା confirm ହେବା ପରେ ମାତ୍ର ନିଆଯାଏ।
+                    Advance payment ଆବଶ୍ୟକ ନୁହେଁ।
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                OSP କେଉଁ ଭାଷାରେ ସେବା ଦେଉଛି ?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    OSP English, Hindi ଏବଂ Odia ଭାଷାରେ ସେବା ଦେଇଥାଏ।
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p class="contact-subtitle">24×7 Online Support for All Digital Services</p>
+
+        <div class="contact-container">
+
+            <!-- Info -->
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p><i class="fas fa-phone"></i> +91 78550 91725</p>
+                <p><i class="fas fa-envelope"></i> odishaservicepoint@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Bhubaneswar, Odisha, India</p>
+                <p><i class="fas fa-clock"></i> 24×7 Support</p>
+
+                <a href="https://wa.me/919556553566" target="_blank" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+
+            <!-- Form -->
+            <div class="contact-form">
+                <h3>Send Message</h3>
+                <form id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="tel" name="phone" placeholder="Mobile Number" required>
+                    <input type="email" name="email" placeholder="Email (optional)">
+
+                    <select name="service" required>
+                        <option value="">Select Service</option>
+                        <option>Document Apply</option>
+                        <option>Govt Certificate</option>
+                        <option>Scholarship</option>
+                        <option>Form Fill-up</option>
+                        <option>Other</option>
+                    </select>
+
+                    <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Floating Buttons -->
+    <div class="floating-btns" aria-label="Quick Contact">
+        <a href="https://wa.me/919556553566" target="_blank">WhatsApp</a>
+        <a href="https://t.me/odisha_service_point" target="_blank" class="telegram">Telegram</a>
+    </div>
+    <!-- Farmer Support Popup -->
+    <div id="farmerPopup" class="popup-overlay">
+        <div class="popup-box">
+            <span class="close-btn" onclick="closeFarmerPopup()">&times;</span>
+
+            <h2>🌾 Farmer Support Services</h2>
+            <p>Govt Schemes • Insurance • Subsidy Help</p>
+
+            <ul class="farmer-schemes">
+                <li><strong>PMFBY</strong> – Crop Insurance</li>
+                <li><strong>KALIA Yojana</strong> – Odisha Farmer Support</li>
+                <li><strong>PM-KISAN</strong> – ₹6000/year</li>
+                <li><strong>Soil Health Card</strong></li>
+                <li><strong>Seed & Fertilizer Subsidy</strong></li>
+            </ul>
+
+            <button class="farmer-btn" onclick="openWhatsapp('Farmer Scheme Assistance')">
+                Apply / Get Help
+            </button>
+        </div>
+    </div>
+
+
+    <!-- =========================
+        OSP FOOTER
+========================= -->
+    <footer class="osp-footer">
+
+        <div class="footer-container">
+
+            <!-- BRAND / LOGO -->
+            <div class="footer-col footer-brand">
+                <img src="assets/osp hd logo 3.png" alt="OSP Logo" class="footer-logo">
+
+                <p>
+                    <strong>Odisha Service Point (OSP)</strong><br>
+                    Low-cost digital services available <strong>24×7</strong> across Odisha.
+                    Services provided via WhatsApp & online support.
+                </p>
+
+                <p class="founder">
+                    Founded by <strong>pilu, munu, sahil</strong>
+                </p>
+
+                <!-- SOCIAL MEDIA -->
+                <div class="footer-social">
+                    <a href="https://wa.me/919556553566" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://t.me/odisha_service_point" target="_blank" aria-label="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/o_s_p_stratup" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@pilubhaiofficial" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- IMPORTANT SERVICES -->
+            <div class="footer-col">
+                <h3>Important Services</h3>
+                <ul>
+                    <li><a href="#services">Document Apply</a></li>
+                    <li><a href="#services">Govt Certificates</a></li>
+                    <li><a href="#services">Scholarship Apply</a></li>
+                    <li><a href="#services">Form Fill-up</a></li>
+                    <li><a href="#services">CSC Services</a></li>
+                    <li><a href="#services">Farmer Support</a></li>
+                </ul>
+            </div>
+
+            <!-- USEFUL LINKS -->
+            <div class="footer-col">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#about">About OSP</a></li>
+                    <li><a href="#how-to-apply">How to Apply</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <p class="visitor-count">
+                    👁️ Total Visitors:
+                    <span id="visitorCounter">0</span>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 <strong>OSP – Odisha Service Point</strong>. All Rights Reserved.
+        </div>
+
+    </footer>
+
+    <!-- Scroll To Top -->
+    <button id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+    <!-- WhatsApp Floating Button
+<a href="https://wa.me/919556553566"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="WhatsApp Support">
+  💬
+</a> -->
+
+
+    <div id="menuOverlay"></div>
+
+    <!-- JS - Mobile-friendly & cache-safe -->
+    <!-- JS - Mobile-friendly & cache-safe -->
+    <script src="js/ai-data.js"></script>
+    <script src="js/ai-engine.js"></script>
+    <script src="js/ai-ui.js"></script>
+
+    <script src="js/script.js?v=1.0.0" defer></script>
+
+    <script src="js/script.js?v=1.0.0" defer></script>
+</body>
+
+</html>

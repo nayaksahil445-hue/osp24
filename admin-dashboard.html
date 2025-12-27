@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Dashboard OSP</title>
+<link rel="stylesheet" href="css/admin-main-style.css">
+    <link rel="icon" href="./assets/osp hd logo 3.png">
+
+</head>
+
+<body class="dashboard">
+
+<header class="dash-header">
+  <h2>OSP Admin Control Panel</h2>
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</header>
+
+<!-- ===== STATS ===== -->
+<section class="stats">
+  <div class="stat-card blue">
+    <h3 id="total">0</h3>
+    <p>Total Requests</p>
+  </div>
+
+  <div class="stat-card orange">
+    <h3 id="pending">0</h3>
+    <p>Pending</p>
+  </div>
+
+  <div class="stat-card green">
+    <h3 id="completed">0</h3>
+    <p>Completed</p>
+  </div>
+
+  <div class="stat-card purple">
+    <h3 id="agents">0</h3>
+    <p>Active Agents</p>
+  </div>
+</section>
+
+<!-- ===== REQUESTS ===== -->
+<section class="panel">
+<h3>Service Requests</h3>
+<table>
+<thead>
+<tr>
+  <th>ID</th>
+  <th>User</th>
+  <th>Service</th>
+  <th>Status</th>
+  <th>Agent</th>
+  <th>Payment</th>
+  <th>Action</th>
+</tr>
+</thead>
+<tbody id="reqTable"></tbody>
+</table>
+</section>
+
+<!-- ===== COMPLAINTS ===== -->
+<section class="panel">
+<h3>Complaints & Fraud Reports</h3>
+<table>
+<thead>
+<tr>
+  <th>ID</th>
+  <th>User</th>
+  <th>Agent</th>
+  <th>Reason</th>
+  <th>Status</th>
+</tr>
+</thead>
+<tbody id="complaintTable"></tbody>
+</table>
+</section>
+
+<!-- ===== ANNOUNCEMENTS ===== -->
+<section class="panel">
+<h3>Announcements</h3>
+<div id="announceBox"></div>
+</section>
+
+<script src="js/seed-data.js"></script>
+<script src="js/admin.js"></script>
+
+</body>
+</html>

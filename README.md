@@ -1,1 +1,3 @@
-# osp24
+# OSP Project
+
+This is our OSP project repository.
