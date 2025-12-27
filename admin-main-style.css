@@ -1,0 +1,259 @@
+/* ================= ROOT VARIABLES ================= */
+:root {
+  --primary: #0d47a1;
+  --secondary: #1976d2;
+  --accent: #ff9800;
+  --bg: #eef1f5;
+  --card: #ffffff;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --radius: 10px;
+  --shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+/* ================= GLOBAL ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-dark);
+}
+
+/* ================= HEADER ================= */
+.dash-header {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  padding: 16px 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+}
+
+/* ================= STATS CARDS ================= */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+  gap: 15px;
+  margin: 20px;
+}
+
+.stats div {
+  background: var(--card);
+  padding: 18px;
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: .35s ease;
+  cursor: pointer;
+}
+
+.stats div h3 {
+  font-size: 22px;
+  color: var(--primary);
+}
+
+.stats div p {
+  font-size: 13px;
+  color: var(--text-light);
+  margin-top: 6px;
+}
+
+.stats div:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(0,0,0,.15);
+}
+
+/* ================= PANELS ================= */
+.panel {
+  background: var(--card);
+  margin: 20px;
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* ================= TABLE ================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th {
+  background: #f1f5ff;
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+table tr:hover {
+  background: #f1f7ff;
+}
+
+/* ================= BUTTONS ================= */
+button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  margin: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: .25s ease;
+}
+
+button:hover {
+  background: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* ================= INPUTS ================= */
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(13,71,161,.15);
+}
+
+/* ================= LOGIN PAGE ================= */
+.login-box {
+  max-width: 420px;
+  margin: 80px auto;
+  background: var(--card);
+  padding: 30px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  animation: fadeIn .8s ease;
+}
+
+.login-box h2 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  .dash-header {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .panel, .stats {
+    margin: 12px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 6px;
+  }
+}
+/* ===== DASHBOARD UI ===== */
+.dashboard {
+  background: #eef1f5;
+}
+
+.logout-btn {
+  background:#ff5252;
+  padding:6px 12px;
+  border:none;
+  color:#fff;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+/* ===== STAT CARDS ===== */
+.stat-card {
+  padding:20px;
+  border-radius:14px;
+  color:#fff;
+  text-align:center;
+  box-shadow:0 12px 30px rgba(0,0,0,.15);
+  transition:.3s;
+}
+
+.stat-card:hover {
+  transform:translateY(-6px) scale(1.04);
+}
+
+.stat-card h3 {
+  font-size:28px;
+}
+
+.stat-card p {
+  font-size:13px;
+  opacity:.9;
+}
+
+.blue {background:linear-gradient(135deg,#0d47a1,#1976d2);}
+.orange {background:linear-gradient(135deg,#ff9800,#f57c00);}
+.green {background:linear-gradient(135deg,#2e7d32,#66bb6a);}
+.purple {background:linear-gradient(135deg,#6a1b9a,#8e24aa);}
+
+/* ===== TABLE ===== */
+table {
+  width:100%;
+  border-collapse:collapse;
+  background:#fff;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+th {
+  background:#0d47a1;
+  color:#fff;
+  padding:12px;
+}
+
+td {
+  padding:12px;
+  border-bottom:1px solid #eee;
+}
+
+tr:hover {
+  background:#f1f7ff;
+}
+
+/* ===== ANNOUNCEMENT ===== */
+#announceBox .notice {
+  background:#fff3cd;
+  border-left:6px solid #ff9800;
+  padding:12px;
+  margin-bottom:10px;
+  border-radius:6px;
+}
